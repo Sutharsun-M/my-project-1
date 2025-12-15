@@ -1,0 +1,149 @@
+*{
+    margin:o;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background:url("44.jpg") no-repeat center /cover;
+    height: 100vh;
+    padding: 50px 5%;
+}
+.container{
+    position:relative;
+    height: 100%;
+    background-color:rgb(255,255,255,.1);
+    border: 2px solid rgb(255,255,255,.2);
+    backdrop-filter:blur(30px) ;
+    border-radius: 10px;
+    transform: scale(0);
+    animation: nun 2s ease forwards ;
+}
+@keyframes nun{
+    100%{
+        transform: scale(1);
+         
+    }
+}
+header{
+    position: absolute;
+    width: 100%;
+    padding: 40px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.animate{
+    transform: translateY(30px);
+    opacity: 0;
+    animation: nun2 1s ease forwards;
+    animation-delay: 1s;
+}
+@keyframes nun2{
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+.logo{
+    font-size: 25px;
+    color: green;
+    text-decoration: none;
+}
+.navbar a{
+    font-size: 20px;
+    color:rgb(255, 240, 240);
+    text-decoration: none;
+    font-weight:500;
+    margin-left: 35px;
+    border-bottom: 2px solid transparent;
+    transition: .10s;
+}
+.navbar a:hover,
+.navbar a.active
+{
+    border-color: white;
+}
+.home{
+    display:flex;
+    align-items: center;
+    height:100%;
+    gap:500;
+    padding:50px 5% 0;
+    color:white;
+    animation-delay: 1.8s;
+}
+.home-detail h1{
+    font-size: 50px;
+    
+}
+.home-detail h2
+
+{
+    font-size: 32px;
+}
+.home-detail p{
+    margin: 10px 0 20px;
+}
+.home-detail .download-social{
+    display: flex;
+    align-items: center;
+}
+.btn{
+    display: inline-block;
+    background: white;
+    border: 2px solid white ;
+    border-radius: 40px;
+    box-shadow: 0 0 10px black;
+    color: blueviolet;
+    text-decoration: none;
+    padding: 10px 30px;
+    transition: .5s;
+}
+.btn:hover{
+    background: transparent;
+    box-shadow: none;
+    color:white;
+}
+.home-detail .social-icon{
+    margin-left: 25px;
+}
+
+.home-detail .social-icon a{
+    padding: 8px;
+    border: 2x solid white;
+    border-radius: 50%;
+    color:cadetblue;
+    text-decoration: none;
+    margin: 0 8px;
+    font-size: 22px;
+    transition: .5s;
+}
+.home-detail .social-icon a:hover{
+    background: white;
+    box-shadow: 0 0 10px;
+    color:black;
+}
+.home-img .img-box{
+    position: relative;
+    width: 28vw;
+    height: 28vw;
+    border: 2px solid black;
+    border-radius: 50%;
+    box-shadow: 0 0 20px;
+    overflow: hidden;
+
+}
+.home-img .img-box img{
+    position: absolute;
+    top:-190px;
+    right: -0.1px;
+    display: block;
+    width:100%;
+    object-fit: cover;
+}
+p {
+  color: black;
+}
+
